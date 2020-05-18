@@ -1,0 +1,61 @@
+﻿@model SagonWeb.Models.User
+
+<!-- breadcrumb start -->
+<div class="breadcrumb-main ">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="breadcrumb-contain">
+                    <div>
+                        <h2>profile</h2>
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><i class="fa fa-angle-double-right"></i></li>
+                            <li><a href="#">profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb End -->
+
+<!-- personal deatail section start -->
+<section class="contact-page register-page section-big-py-space bg-light">
+    <div class="custom-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h3 class="mb-3">PERSONAL DETAIL</h3>
+                <form class="theme-form" asp-action="Profile">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="Name">Name</label>
+                                <input asp-for="Name" type="text" class="form-control" placeholder="Enter Your Name" required="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="Username">Username</label>
+                                <input asp-for="Username" type="text" class="form-control" placeholder="Username" required="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label asp-for="Email">Email</label>
+                                    <input asp-for="Email" type="email" class="form-control" id="email" placeholder="Email" required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn btn-sm btn-normal mb-lg-5" type="submit">Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>            
+        </div>
+    </div>
+</section>
+<!-- Section ends -->

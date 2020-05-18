@@ -1,0 +1,607 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Sagon - Make The Shopping Real</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Sagon" />
+    <meta name="keywords" content="Sagon" />
+    <meta name="author" content="Sagon" />
+    <link rel="icon"
+          href="~/images/favicon/favicon.ico"
+          type="image/x-icon" />
+    <link rel="shortcut icon"
+          href="~/images/favicon/favicon.ico"
+          type="image/x-icon" />
+
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap"
+          rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+          rel="stylesheet" />
+
+    <!--icon css-->
+    <link rel="stylesheet"
+          type="text/css"
+          href="~/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/themify.css" />
+
+    <!--Slick slider css-->
+    <link rel="stylesheet" type="text/css" href="~/css/slick.css" />
+    <link rel="stylesheet"
+          type="text/css"
+          href="~/css/slick-theme.css" />
+
+    <!--Animate css-->
+    <link rel="stylesheet" type="text/css" href="~/css/animate.css" />
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.css" />
+
+    <!-- Theme css -->
+    <link rel="stylesheet"
+          type="text/css"
+          href="~/css/color3.css"
+          media="screen"
+          id="color" />
+</head>
+
+<body class="bg-light">
+
+    <!-- loader start -->
+    <div class="loader-wrapper">
+        <div>
+            <img src="~/images/loader.gif" alt="loader" />
+        </div>
+    </div>
+    <!-- loader end -->
+    <!--header start-->
+    <header>
+        <div class="mobile-fix-option"></div>
+        <div class="top-header">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-xl-5 col-md-7 col-sm-6">
+                        <div class="top-header-left">
+                            <div class="shpping-order">
+                                <h6>free shipping on order over $99</h6>
+                            </div>
+                            <div class="app-link">
+                                <h6>
+                                    Download aap
+                                </h6>
+                                <ul>
+                                    <li>
+                                        <a><i class="fa fa-apple"></i></a>
+                                    </li>
+                                    <li>
+                                        <a><i class="fa fa-android"></i></a>
+                                    </li>
+                                    <li>
+                                        <a><i class="fa fa-windows"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-md-5 col-sm-6">
+                        <div class="top-header-right">
+                            <div class="language-block">
+                                <div class="language-dropdown">
+                                    <span class="language-dropdown-click">
+                                        english
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                    <ul class="language-dropdown-open">                                        
+                                        <li><a href="#">english</a></li>
+                                        <li><a href="#">french</a></li>                                        
+                                    </ul>
+                                </div>
+                                <div class="curroncy-dropdown">
+                                    <span class="curroncy-dropdown-click">
+                                        xaf<i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                    <ul class="curroncy-dropdown-open">
+                                        <li>
+                                            <a href="#"><i class="fa fa-usd"></i>xaf</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-inr"></i>eur</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-inr"></i>usd</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout-header2">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="main-menu-block">
+                        <div class="sm-nav-block">
+                            <span class="sm-nav-btn"><i class="fa fa-bars"></i></span>
+                            <ul class="nav-slide">
+                                <li>
+                                    <div class="nav-sm-back">
+                                        back <i class="fa fa-angle-right pl-2"></i>
+                                    </div>
+                                </li>                                
+                                <li><a href="#">TV, Appliances</a></li>                                
+                                <li class="mor-slide-open">
+                                    <ul>                                        
+                                        <li><a href="#">Video Games</a></li>                                        
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="mor-slide-click">
+                                        More category
+                                        <i class="fa fa-angle-down pro-down"></i>
+                                        <i class="fa fa-angle-up pro-up"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-block">
+                            <a href="/">
+                                <img src="~/images/logo.png"
+                                     class="img-fluid"
+                                     alt="logo" />
+                            </a>
+                        </div>
+                        <div class="input-block">
+                            <div class="input-box">
+                                <form class="big-deal-form">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="search"><i class="fa fa-search"></i></span>
+                                        </div>
+                                        <input type="text"
+                                               class="form-control"
+                                               placeholder="Search a Shop, Product..." />                                        
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="cart-block cart-hover-div" onclick="openCart()">
+                            <div class="cart">
+                                <span class="cart-product">0</span>
+                                <ul>
+                                    <li class="mobile-cart">
+                                        <a href="#">
+                                            <i class="icon-shopping-cart"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cart-item">
+                                <h5>shopping</h5>
+                                <h5>cart</h5>
+                            </div>
+                        </div>
+                        <div class="menu-nav">
+                            <span class="toggle-nav">
+                                <i class="fa fa-bars"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category-header-2">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col">
+                        <div class="navbar-menu">
+                            <div class="category-left">
+                                <div class="nav-block">
+                                    <div class="nav-left">
+                                        <nav class="navbar"
+                                             data-toggle="collapse"
+                                             data-target="#navbarToggleExternalContent">
+                                            <button class="navbar-toggler" type="button">
+                                                <span class="navbar-icon">
+                                                    <i class="fa fa-arrow-down"></i>
+                                                </span>
+                                            </button>
+                                            <h5 class="mb-0 text-white title-font">
+                                                Shop by category
+                                            </h5>
+                                        </nav>
+                                        <div class="collapse nav-desk"
+                                             id="navbarToggleExternalContent">
+                                            <ul class="nav-cat title-font">                                                
+                                                <li>
+                                                    <img src="~/images/layout-1/nav-img/02.png"
+                                                         alt="category-product" />
+                                                    <a href="#">TV, Appliances</a>
+                                                </li>                                                
+                                                <li>
+                                                    <ul class="mor-slide-open">
+                                                        <li>
+                                                            <img src="~/images/layout-1/nav-img/08.png"
+                                                                 alt="category-product" />
+                                                            <a>Sports</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a class="mor-slide-click">
+                                                        more category
+                                                        <i class="fa fa-angle-down pro-down"></i><i class="fa fa-angle-up pro-up"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-block">
+                                    <nav id="main-nav">
+                                        <div class="toggle-nav">
+                                            <i class="fa fa-bars sidebar-bar"></i>
+                                        </div>
+                                        <ul id="main-menu" class="sm pixelstrap sm-horizontal">
+                                            <li>
+                                                <div class="mobile-back text-right">
+                                                    Back<i class="fa fa-angle-right pl-2"
+                                                           aria-hidden="true"></i>
+                                                </div>
+                                            </li>
+                                            <!--HOME-->
+                                            <li>
+                                                <a href="#" class="dark-menu-item">Home</a>                                                
+                                            </li>
+                                            <!--HOME-END-->
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="icon-block">
+                                    <ul>
+                                        <li class="mobile-user onhover-dropdown"
+                                            onclick="openAccount()">
+                                            <a href="#"><i class="icon-user"></i> </a>
+                                        </li>
+                                        <li class="mobile-wishlist" onclick="openWishlist()">
+                                            <a>
+                                                <i class="icon-heart"></i>
+                                                <div class="cart-item">
+                                                    <div>0 item<span>wishlist</span></div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mobile-search">
+                                            <a href="#"><i class="icon-search"></i></a>
+                                            <div class="search-overlay">
+                                                <div>
+                                                    <span class="close-mobile-search">×</span>
+                                                    <div class="overlay-content">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-xl-12">
+                                                                    <form>
+                                                                        <div class="form-group">
+                                                                            <input type="text"
+                                                                                   class="form-control"
+                                                                                   id="exampleInputPassword1"
+                                                                                   placeholder="Search a Product" />
+                                                                        </div>
+                                                                        <button type="submit"
+                                                                                class="btn btn-primary">
+                                                                            <i class="fa fa-search"></i>
+                                                                        </button>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mobile-setting mobile-setting-hover"
+                                            onclick="openSetting()">
+                                            <a href="#"><i class="icon-settings"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="category-right">
+                                <div class="contact-block">
+                                    <div>
+                                        <i class="fa fa-volume-control-phone"></i>
+                                        <span>call us<span>+237 698 901 563</span></span>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header end-->
+
+    @RenderBody()
+
+    <!--contact banner start-->
+    <section class="contact-banner contact-banner-inverse">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="contact-banner-contain">
+                        <div class="contact-banner-img">
+                            <img src="~/images/layout-1/call-img.png"
+                                 class="img-fluid"
+                                 alt="call-banner" />
+                        </div>
+                        <div><h3>if you have any question please call us</h3></div>
+                        <div><h2>+237 698 901 563</h2></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact banner end-->
+    <!--footer start-->
+    <footer class="footer-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-main-contian">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12">
+                                <div class="footer-left">
+                                    <div class="footer-logo">
+                                        <img src="~/images/logo.png"
+                                             class="img-fluid"
+                                             alt="logo" />
+                                    </div>
+                                    <div class="footer-detail">
+                                        <p>
+                                            Contrary to popular belief, Lorem Ipsum is not simply
+                                            random text. It has roots in a piece of classical Latin
+                                            literature from 45 BC, making it over 2000 years old.
+                                            Richard McClintock,
+                                        </p>
+                                        <ul class="paymant-bottom">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="~/images/layout-1/pay/1.png"
+                                                         class="img-fluid"
+                                                         alt="pay" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="~/images/layout-1/pay/2.png"
+                                                         class="img-fluid"
+                                                         alt="pay" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="~/images/layout-1/pay/3.png"
+                                                         class="img-fluid"
+                                                         alt="pay" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="~/images/layout-1/pay/4.png"
+                                                         class="img-fluid"
+                                                         alt="pay" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="~/images/layout-1/pay/5.png"
+                                                         class="img-fluid"
+                                                         alt="pay" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12">
+                                <div class="footer-right">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="subscribe-section">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <div class="subscribe-block">
+                                                            <div class="subscrib-contant">
+                                                                <h4>subscribe to newsletter</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <div class="subscribe-block">
+                                                            <div class="subscrib-contant">
+                                                                <div class="input-group">
+                                                                    <div class="input-group-prepend">
+                                                                        <span class="input-group-text">
+                                                                            <i class="fa fa-envelope-o"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <input type="text"
+                                                                           class="form-control"
+                                                                           placeholder="your email" />
+                                                                    <div class="input-group-prepend">
+                                                                        <span class="input-group-text telly">
+                                                                            <i class="fa fa-telegram"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="account-right">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="footer-box">
+                                                            <div class="footer-title">
+                                                                <h5>my account</h5>
+                                                            </div>
+                                                            <div class="footer-contant">
+                                                                <ul>
+                                                                    <li><a href="#">about us</a></li>
+                                                                    <li><a href="#">contact us</a></li>
+                                                                    <li><a href="#">terms & conditions</a></li>
+                                                                    <li><a href="#">returns & exchanges</a></li>
+                                                                    <li><a href="#">shipping & delivery</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="footer-box">
+                                                            <div class="footer-title">
+                                                                <h5>quick link</h5>
+                                                            </div>
+                                                            <div class="footer-contant">
+                                                                <ul>
+                                                                    <li><a href="#">store location</a></li>
+                                                                    <li><a href="#"> my account</a></li>
+                                                                    <li><a href="#"> orders tracking</a></li>
+                                                                    <li><a href="#"> size guide</a></li>
+                                                                    <li><a href="#">FAQ </a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <div class="footer-box footer-contact-box">
+                                                            <div class="footer-title">
+                                                                <h5>contact us</h5>
+                                                            </div>
+                                                            <div class="footer-contant">
+                                                                <ul class="contact-list">
+                                                                    <li>
+                                                                        <i class="fa fa-map-marker"></i><span>
+                                                                            Douala - Cameroon <br />
+                                                                            <span> Bonanjo</span>
+                                                                        </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa fa-phone"></i><span>call us: +237 698 901 563</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa fa-envelope-o"></i><span>email us: king.kemsty@gmail.com</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa fa-fax"></i><span>fax 123456</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app-link-block bg-transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="app-link-bloc-contain app-link-bloc-contain-1">
+                        <div class="app-item-group">
+                            <div class="app-item">
+                                <img src="~/images/layout-1/app/1.png"
+                                     class="img-fluid"
+                                     alt="app-banner" />
+                            </div>
+                            <div class="app-item">
+                                <img src="~/images/layout-1/app/2.png"
+                                     class="img-fluid"
+                                     alt="app-banner" />
+                            </div>
+                        </div>
+                        <div class="app-item-group">
+                            <div class="sosiyal-block">
+                                <h6>follow us</h6>
+                                <ul class="sosiyal">
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-rss"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="sub-footer-contain">
+                            <p>
+                                <span>@DateTime.Now.Year </span>©Copyright by Sagon
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer end-->
+    <!-- tap to top -->
+    <div class="tap-top">
+        <div>
+            <i class="fa fa-angle-double-up"></i>
+        </div>
+    </div>
+    <!-- tap to top End -->
+    <!-- latest jquery-->
+    <script src="~/js/jquery-3.3.1.min.js"></script>
+
+    <!-- slick js-->
+    <script src="~/js/slick.js"></script>
+
+    <!-- popper js-->
+    <script src="~/js/popper.min.js"></script>
+
+    <!-- Timer js-->
+    <script src="~/js/menu.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="~/js/bootstrap.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="~/js/bootstrap-notify.min.js"></script>
+
+    <!-- Theme js-->
+    <script src="~/js/script.js"></script>
+    <script src="~/js/slider-animat.js"></script>
+    <script src="~/js/timer.js"></script>
+    <script src="~/js/modal.js"></script>
+</body>
+</html>
