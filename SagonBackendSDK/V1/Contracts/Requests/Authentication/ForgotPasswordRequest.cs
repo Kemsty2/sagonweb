@@ -1,4 +1,4 @@
-﻿namespace SangonBackendSDK.V1.Contracts.Requests
+﻿namespace SagonBackendSDK.V1.Contracts.Requests
 {
     public class ForgotPasswordRequest
     {

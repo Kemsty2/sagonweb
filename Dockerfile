@@ -6,9 +6,9 @@ WORKDIR /app
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
 COPY ["SagonWeb/SagonWeb.csproj", "SagonWeb/"]
-COPY ["SangoBackendSDK/SangonBackendSDK.csproj", "SangoBackendSDK/"]
+COPY ["SagonBackendSDK/SagonBackendSDK.csproj", "SagonBackendSDK/"]
 RUN dotnet restore "SagonWeb/SagonWeb.csproj"
-RUN dotnet restore "SangoBackendSDK/SangoBackendSDK.csproj"
+RUN dotnet restore "SagonBackendSDK/SagonBackendSDK.csproj"
 COPY . .
 WORKDIR "/src/SagonWeb"
 RUN dotnet build "SagonWeb.csproj" -c Release -o /app/build

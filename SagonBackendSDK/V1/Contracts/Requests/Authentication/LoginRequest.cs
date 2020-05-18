@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SangonBackendSDK.V1.Contracts.Requests.Authentication
+namespace SagonBackendSDK.V1.Contracts.Requests.Authentication
 {
     public class LoginRequest
     {

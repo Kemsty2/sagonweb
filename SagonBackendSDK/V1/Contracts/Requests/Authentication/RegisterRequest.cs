@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace SangonBackendSDK.V1.Contracts.Requests.Authentication
+namespace SagonBackendSDK.V1.Contracts.Requests.Authentication
 {
     public class RegisterRequest
     {

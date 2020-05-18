@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SangoBackendSDK\SangonBackendSDK.csproj" />
+    <ProjectReference Include="..\SagonBackendSDK\SagonBackendSDK.csproj" />
   </ItemGroup>
 
 

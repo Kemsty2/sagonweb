@@ -1,4 +1,4 @@
-﻿namespace SangonBackendSDK.V1.Contracts.Requests.Authentication
+﻿namespace SagonBackendSDK.V1.Contracts.Requests.Authentication
 {
     public class ResetPasswordRequest
     {
