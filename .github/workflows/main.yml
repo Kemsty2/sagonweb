@@ -1,36 +1,22 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+name: 'SagonWeb_CI' #set whatevername you want to your github job
+ # set the events you would like to trigger this job
 on:
   push:
-    branches:
+    branches: 
       - master
       - dev
-  pull_request:
-    branches: [ master ]
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2                
-    
-    # Runs a set of commands using the runners shell
-    - name: Build and Deploy Sagon Web Docker Image on 
-      # Set Environnemnt Variables
-      env:
-        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        APP_NAME: ${{ 'sagonweb' }}
-      run: |      
-        docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
-        heroku container:push web -a $APP_NAME
-        heroku container:release web -a $APP_NAME
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Build, Push and Deploy to Heroku #set the whatever name you want to this step
+        id: heroku
+        uses: jctaveras/heroku-deploy@v1.0.0  # use the latest version of the action
+        with:
+          email: ${{ 'king.kemsty@gmail.com' }} # your heroku email
+          api_key: ${{ secrets.HEROKU_API_KEY }} # your  heroku api key
+          app_name: ${{ 'sagonweb' }} # you aplication name
+          dockerfile: '.' # set the path to the folder wher the Dokerfile is located
